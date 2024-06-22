@@ -10,7 +10,7 @@ class BoardingPage extends StatelessWidget {
   final OnboardingStep onboardingStep;
   final PageController pageController;
 
-  String _textStyle(OnboardingStep onboardingStep) {
+  String _buttonText(OnboardingStep onboardingStep) {
     switch (onboardingStep) {
       case OnboardingStep.welcome:
       case OnboardingStep.finish:
@@ -53,7 +53,7 @@ class BoardingPage extends StatelessWidget {
                   pageController.nextPage(duration: const Duration(milliseconds: 300), curve: Curves.easeInOut);
                 }
               },
-              child: Text(_textStyle(onboardingStep)),
+              child: Text(_buttonText(onboardingStep)),
             )
           ]
         ],
