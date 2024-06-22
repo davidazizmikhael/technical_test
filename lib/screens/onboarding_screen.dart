@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:technical_test/boarding_page.dart';
-import 'package:technical_test/enum_onboarding_step.dart';
+import 'package:technical_test/widgets/onboarding_widget.dart';
+import 'package:technical_test/utils/enum_onboarding_step.dart';
 
 class OnboardingScreen extends StatelessWidget {
   final PageController _pageController = PageController();
@@ -16,7 +16,7 @@ class OnboardingScreen extends StatelessWidget {
         children: [
           ...List.generate(
             OnboardingStep.values.length,
-            (index) => BoardingPage(
+            (index) => OnBoardingWidget(
               title: OnboardingStep.values[index].title,
               subtitle: OnboardingStep.values[index].subtitle,
               onboardingStep: OnboardingStep.values[index],
