@@ -21,9 +21,6 @@ migrate_working_dir/
 # is commented out by default.
 .vscode/
 
-## Ignore FVM
-.fvm/flutter_sdk
-
 # Flutter/Dart/Pub related
 **/doc/api/
 **/ios/Flutter/.last_build_id
@@ -34,11 +31,7 @@ migrate_working_dir/
 .pub-cache/
 .pub/
 /build/
-.githooks/
 pubspec.lock
-
-# Flutter tests hive_path
-test/hive_path
 
 # Symbolication related
 app.*.symbols
